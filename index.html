@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VuAlta | Precision ERP Delivery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              vualta: {
+                blue: '#3458A3',
+                purple: '#7B79F2',
+                dark: '#0F172A',
+                light: '#F5F5FA'
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .venn-circle {
+            mix-blend-mode: multiply;
+        }
+        /* Custom animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-up {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-white text-vualta-dark overflow-x-hidden">
+  <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-8">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <a href="#" class="flex items-center gap-3">
+        <img src="./logo.png" alt="VuAlta Logo" class="w-16 h-16" />
+        <span class="text-xl font-bold tracking-tighter text-vualta-dark uppercase">VuAlta</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-bold tracking-widest text-slate-500">
+        <a href="#approach" class="hover:text-vualta-purple transition-colors">APPROACH</a>
+        <a href="#outcomes" class="hover:text-vualta-purple transition-colors">OUTCOMES</a>
+        <a href="#team" class="hover:text-vualta-purple transition-colors">TEAM</a>
+        <a href="mailto:caroline@vualta.com" class="bg-vualta-dark text-white px-6 py-2 rounded-lg hover:bg-vualta-purple transition-all">LET'S TALK</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="relative h-screen flex items-center px-6 overflow-hidden">
+    <div class="absolute inset-0 z-0 opacity-[0.08] pointer-events-none flex items-center justify-center">
+      <img src="./logo.png" alt="VuAlta Logo Background" class="w-80 h-80 object-contain" />
+    </div>
+    <div class="max-w-7xl mx-auto w-full relative z-10">
+      <p class="text-slate-400 font-medium text-lg mb-6 animate-fade-up">Value driven through expert-led delivery</p>
+      <h1 class="text-6xl md:text-[110px] font-bold text-vualta-dark leading-[0.9] tracking-tight mb-12 animate-fade-up [animation-delay:0.2s]">
+        ERP Built for people <br/>
+        & <span class="text-vualta-purple">performance.</span>
+      </h1>
+      <div class="flex gap-4 animate-fade-up [animation-delay:0.4s]">
+        <a href="#approach" class="bg-vualta-dark text-white px-10 py-4 rounded-xl font-bold hover:bg-vualta-purple transition-all">Explore Approach</a>
+        <a href="#team" class="border-2 border-slate-100 text-vualta-dark px-10 py-4 rounded-xl font-bold hover:border-vualta-purple transition-all">Our Team</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="approach" class="py-32 bg-vualta-dark text-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-vualta-purple font-bold tracking-[0.4em] text-xs uppercase mb-12">OUR APPROACH</h2>
+      <p class="text-3xl md:text-5xl font-medium leading-tight mb-12">
+        We help mid-market and enterprise <span class="text-vualta-purple">food & beverage organizations</span> modernize finance and operations on <span class="text-vualta-purple">Dynamics 365 Finance & Operations and Copilot.</span>
+      </p>
+      <div class="grid md:grid-cols-2 gap-12 text-slate-400 text-xl leading-relaxed">
+        <p>Our team specializes in complex, industry-specific deployments where standard implementations struggle—multi-entity finance, supply chain variability, and legacy system integration.</p>
+        <p>We lead architecture-first design sessions, then stay embedded through delivery and adoption to ensure customers actually use what gets deployed.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="mb-20">
+        <h2 class="text-4xl md:text-6xl font-bold text-vualta-dark mb-6">Common <span class="text-vualta-purple">causes & root challenges.</span></h2>
+        <p class="text-slate-500 text-xl">ERP failures stem from disconnected systems, unclear processes, and low user adoption.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-10 bg-slate-50 rounded-[2.5rem] border border-slate-100 hover:bg-white hover:shadow-xl transition-all group">
+          <div class="text-4xl mb-6">🗺️</div>
+          <h4 class="text-2xl font-bold mb-4">Misaligned systems</h4>
+          <p class="text-slate-500">ERP failures start when solutions ignore how the business operates.</p>
+        </div>
+        <div class="p-10 bg-slate-50 rounded-[2.5rem] border border-slate-100 hover:bg-white hover:shadow-xl transition-all group">
+          <div class="text-4xl mb-6">📉</div>
+          <h4 class="text-2xl font-bold mb-4">Broken execution</h4>
+          <p class="text-slate-500">Projects stall without adoption, regular feedback loop and stabilization.</p>
+        </div>
+        <div class="p-10 bg-slate-50 rounded-[2.5rem] border border-slate-100 hover:bg-white hover:shadow-xl transition-all group">
+          <div class="text-4xl mb-6">🧩</div>
+          <h4 class="text-2xl font-bold mb-4">One-size-fits-all approach</h4>
+          <p class="text-slate-500">Rigid frameworks are rarely effective and don’t solve the root issues.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="outcomes" class="py-32 bg-vualta-light">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
+      <div>
+        <h2 class="text-5xl font-bold mb-4">Business outcomes.</h2>
+        <h3 class="text-3xl text-slate-400 font-medium mb-12">Driven by experience.</h3>
+        <div class="space-y-10">
+          <div>
+            <h4 class="text-xl font-bold text-vualta-blue mb-2">Platform</h4>
+            <p class="text-slate-500 leading-relaxed">Configuring and adapting to new and existing ERP workflows and systems.</p>
+          </div>
+          <div>
+            <h4 class="text-xl font-bold text-vualta-blue mb-2">People</h4>
+            <p class="text-slate-500 leading-relaxed">Equipping users with the skills, confidence and support to question the status quo and succeed.</p>
+          </div>
+          <div>
+            <h4 class="text-xl font-bold text-vualta-blue mb-2">Process</h4>
+            <p class="text-slate-500 leading-relaxed">Designing workflows that are tailored specifically to business operations while also finding the right balance between standardization and customizations.</p>
+          </div>
+        </div>
+      </div>
+      <div class="relative flex items-center justify-center h-[600px]">
+        <div class="absolute w-72 h-72 border-2 border-vualta-blue/20 rounded-full flex items-center justify-center -translate-x-12 -translate-y-12">
+           <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-[-200px]">Platform</span>
+        </div>
+        <div class="absolute w-72 h-72 border-2 border-vualta-blue/20 rounded-full flex items-center justify-center translate-x-12 -translate-y-12">
+           <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-[-200px]">People</span>
+        </div>
+        <div class="absolute w-72 h-72 border-2 border-vualta-blue/20 rounded-full flex items-center justify-center translate-y-20">
+           <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-[-240px]">Process</span>
+        </div>
+        <div class="relative z-10 w-24 h-24 bg-white rounded-full shadow-2xl flex items-center justify-center">
+          <img src="./logo.png" alt="VuAlta Logo" class="w-12 h-12" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-5xl font-bold mb-16">The <span class="text-vualta-purple italic">VuAlta</span> way.</h2>
+      <div class="grid md:grid-cols-3 gap-12">
+        <div class="relative p-8 border-l-2 border-slate-100 hover:border-vualta-purple transition-colors">
+          <div class="text-3xl mb-6">✨</div>
+          <h4 class="text-2xl font-bold mb-4">Embedded team experts</h4>
+          <p class="text-slate-500 leading-relaxed">Leadership doesn’t stop at the pitch; we work together every day.</p>
+        </div>
+        <div class="relative p-8 border-l-2 border-slate-100 hover:border-vualta-purple transition-colors">
+          <div class="text-3xl mb-6">🕒</div>
+          <h4 class="text-2xl font-bold mb-4">Rescue & re-stabilization</h4>
+          <p class="text-slate-500 leading-relaxed">We specialize in taking over where others have stalled.</p>
+        </div>
+        <div class="relative p-8 border-l-2 border-slate-100 hover:border-vualta-purple transition-colors">
+          <div class="text-3xl mb-6">🖐️</div>
+          <h4 class="text-2xl font-bold mb-4">Human-first approach</h4>
+          <p class="text-slate-500 leading-relaxed">We adapt frameworks and documentation to fit your culture</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-5xl font-bold text-center mb-20">Our Clients</h2>
+      <p class="text-center text-slate-500 text-lg mb-16">Trusted by leading organizations to transform their operations</p>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-12 items-center justify-center">
+        <div class="flex items-center justify-center h-24">
+          <img src="./liquid-iv.png" alt="Liquid I.V." class="max-h-20 object-contain" />
+        </div>
+        <div class="flex items-center justify-center h-24">
+          <img src="./buddig.png" alt="Buddig" class="max-h-20 object-contain" />
+        </div>
+        <div class="flex items-center justify-center h-24">
+          <img src="./avid.png" alt="Avid Bioservices" class="max-h-20 object-contain" />
+        </div>
+        <div class="flex items-center justify-center h-24">
+          <img src="./prs.png" alt="PRS Systems" class="max-h-20 object-contain" />
+        </div>
+        <div class="flex items-center justify-center h-24">
+          <img src="./organogenesis.png" alt="Organogenesis" class="max-h-20 object-contain" />
+        </div>
+        <div class="flex items-center justify-center h-24">
+          <img src="./chromehearts.png" alt="Chromehearts" class="max-h-20 object-contain" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="team" class="py-32 bg-vualta-light">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-6xl font-bold text-center mb-24">About us.</h2>
+      <div class="space-y-40">
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+           <div>
+             <h4 class="text-4xl font-bold mb-2">Caroline <span class="text-vualta-purple font-medium italic">Hurabielle</span></h4>
+             <p class="text-vualta-purple font-bold tracking-widest text-xs uppercase mb-8">ERP & Business Transformation Leader</p>
+             <p class="text-xl text-slate-500 leading-relaxed">An ERP and business transformation leader known for combining technical depth with human-centered leadership. Caroline has worked with Microsoft Dynamics 365 since 2008 across both consulting and senior in-house roles.</p>
+           </div>
+           <div class="aspect-square rounded-[3rem] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl max-w-xs">
+             <img src="./caroline.jpg" alt="Caroline Hurabielle" class="w-full h-full object-cover" />
+           </div>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-20 items-center lg:flex-row-reverse">
+           <div>
+             <h4 class="text-4xl font-bold mb-2">Chad <span class="text-vualta-purple font-medium italic">Dalton</span></h4>
+             <p class="text-vualta-purple font-bold tracking-widest text-xs uppercase mb-8">Dynamics 365 Technical Architect</p>
+             <p class="text-xl text-slate-500 leading-relaxed">A Dynamics 365 Technical Architect recognized for blending deep technical expertise with strong business acumen. Chad has led more than eight large-scale ERP implementations for high-transaction clients.</p>
+           </div>
+           <div class="aspect-square rounded-[3rem] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl max-w-xs">
+             <img src="./chad.jpg" alt="Chad Dalton" class="w-full h-full object-cover" />
+           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" class="bg-vualta-dark text-white py-40 text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h3 class="text-8xl md:text-[130px] font-bold mb-12 tracking-tighter">Thank you!</h3>
+      <div class="flex justify-center gap-12 text-sm font-bold tracking-[0.3em] text-slate-500 mb-12">
+        <a href="https://www.linkedin.com/company/vualta/?viewAsMember=true" class="hover:text-vualta-purple transition-colors" target="_blank" rel="noopener">LINKEDIN</a>
+        <a href="mailto:caroline@vualta.com" class="hover:text-vualta-purple transition-colors">LET'S TALK</a>
+      </div>
+      <p class="text-[10px] font-bold tracking-[0.5em] text-slate-700"> VUALTA LLC. 2022</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('scroll', function() {
+      const nav = document.querySelector('nav');
+      if (window.scrollY > 20) {
+        nav.classList.add('glass','py-4','border-b','border-slate-100','shadow-sm');
+        nav.classList.remove('py-8');
+      } else {
+        nav.classList.remove('glass','py-4','border-b','border-slate-100','shadow-sm');
+        nav.classList.add('py-8');
+      }
+    });
+  </script>
+</body>
+</html>
